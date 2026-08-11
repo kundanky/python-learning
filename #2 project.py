@@ -1,0 +1,6 @@
+print("Age Details")
+age = int(input("Enter Your Age"))
+print("Age:",age)
+print("after 10 years:", age + 10)
+print("after 20 years:", age +20)
+print("after 50 years:", age +50)
