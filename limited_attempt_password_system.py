@@ -2,7 +2,7 @@ print("password system")
 password =""
 attempts = 0
 while password !="1234" and attempts <3:
-	password = input("Enter You Password:")
+	password = input("Enter Your Password:")
 	attempts = attempts +1
 	if password  =="1234":
 		print("successful")
