@@ -4,7 +4,7 @@ username =""
 password =""
 attempt = 0
 total = 3
-name = "sakshi"
+name = "sakshi ❤ K"
 while attempt <3:
 	username = input("Enter Username:").lower()
 	password = input("Enter password").lower()
