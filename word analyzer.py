@@ -4,7 +4,7 @@ words= sentence.split()
 print(len(words))
 print(words[0:-1])
 search = input("Enter what you're searching for").lower()
-word2= "sakshi"
+word2= "sakshiiiiii"
 if word2 in search:
 	print("Found her")
 else:
