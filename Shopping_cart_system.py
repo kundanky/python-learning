@@ -13,6 +13,6 @@ while True:
 		snacks.append(snack)
 		total = total + price
 print("<------Your Item List ------>")
-print(snacks, end =" ")
-print()
+for snack in snacks :
+	print(snack)
 print("Your total bill is $", total)
