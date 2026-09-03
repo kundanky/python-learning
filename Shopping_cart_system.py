@@ -14,5 +14,6 @@ while True:
 		total = total + price
 print("<------Your Item List ------>")
 for snack in snacks :
-	print(snack)
-print("Your total bill is $", total)
+	print(snack,end = " ")
+print()
+print("Your total bill is $",total)

@@ -9,12 +9,12 @@ def calc(x, y):
 	a = z - y
 	b = a * z
 	c = b / a
-	return z , a, b, c
-z, a, b, c= calc(50, 40)  #unpacked result
-print(z)
-print(a)
-print(b)
-print(c)
+	return  c
+  #unpacked result
+print(calc(50, 40)) 
+print()
+print()
+print()
 #diff variant packed result (tuple)
 #def calc(x, y):
 	#z = x + y

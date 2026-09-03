@@ -4,6 +4,7 @@ questions = ("How many elements are there in periodic table?","Best aimer in val
 
 options = (("A.119","B.117","C.118","D.121"), ("A.Demon1","B.Something","C.Kr1stal","D.Primmie"), ("A.Zywoo","B.Donk","C.Monesy","D.S1mple"), ("A.Tectonic","B.Abhiz","C.Zai","D.Ouling"))
 answers = ("C","A","B","C")
+valid_options = ("A","B","C","D")
 guesses =[]
 score = 0
 question_num= 0
@@ -12,7 +13,12 @@ for question in questions:
 	print(question)
 	for option in options[question_num]:
 		print(option)
-	guess = input("Enter your guess (A,B,C,D):").upper()
+	while True:
+		guess = input("Enter your guess (A,B,C,D):").upper()
+		if guess not in valid_options:
+			print(" invalid input")
+		else:
+			break
 	guesses.append(guess)
 	if guess == answers[question_num]:
 		score += 1
@@ -23,7 +29,7 @@ for question in questions:
 	print("Your guess:",guess)
 	print()
 	question_num += 1
-	total = int((score / question_num)*100)
+total = int((score / question_num)*100)
 print(f"You total score is:{score}/{question_num} = {total}%")
 print("Your Guesses↓")
 print(" ".join(guesses))
