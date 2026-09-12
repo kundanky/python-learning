@@ -11,4 +11,3 @@ while number >= 1:
 		total= total + 1
 		number = number -1
 print("total numbers:",total)
-	

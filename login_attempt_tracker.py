@@ -13,13 +13,13 @@ while attempt <3:
 	if username == "kundanky" and  password =="ky":
 		print("login successful")
 		text = input("Tell us something about yourself").lower()
-		words =text.split()
+		words=text.split()
 		words2=text.replace(" ","_")
 		print(len(words))
 		print(words2)
+		print(f"Welcome {name} You wrote {len(words)} words")
 		break
 	elif attempt == 3:
 		print("You're locked")
 	else:
 		print("attempts left",total)
-print(f"Welcome {name} You wrote {len(words)} words")
